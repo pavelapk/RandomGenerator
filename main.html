@@ -6,15 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div align="center">
-		<p>Сгенерированные числа:</p>
-		<p id="generatedNumber">12</p>
-		<input type="button" name="generate" id="generate" value="Сгенерировать">
-		<p>новую последовательность из</p>
-		<p id="sliderValue">1 чисел</p>
-		<input type="range" min="1" max="50" value="1" name="slider" class="slider" id="slider">
-		<p>от <input type="text" name="minValue" id="minValue" value="1" size="1"> до <input type="text" id="maxValue" name="maxValue" value="100" size="1"></p>
-	</div>
+    <center>
+        <p>Сгенерированные числа:</p>
+        <div id="generatedNumber"> </div>
+		<input type="button" onclick="Generate()" value="Сгенерировать">
+		<div id="count">1 чисел</div>
+		<input type="range" min="1" max="50" value="1" id="slider">
+		<p> 
+            от <input type="text" id="minValue" value="1" size="4"> 
+            до <input type="text" id="maxValue" value="100" size="4">
+        </p>
+	</center>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
